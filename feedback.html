@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback form</title>
+    <style>
+        #container{
+          background-image: radial-gradient(circle, white, red);
+           height: 600px;
+           width: 1500px;
+border-radius: 10px;
+            /* background-image: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAHMAwgMBIgACEQEDEQH/xAAZAAADAQEBAAAAAAAAAAAAAAAAAgMBBAf/xAAcEAEBAQEBAQEBAQAAAAAAAAAAAQIREmFRIZH/xAAYAQEBAQEBAAAAAAAAAAAAAAAAAQIGBP/EABYRAQEBAAAAAAAAAAAAAAAAAAARAf/aAAwDAQACEQMRAD8A87aA8rrRWgSCwQRrYEZI3jeNkAvGyG43gsJxppG+VVPjeG4OCQnBw1g4EIDcZYgVh6USMDawIwCgRnPk/wAA7QI1sAGoDSBsFDeCS/huBGG43hpFUnDcNJDeQTkEink3kWI8HFfLPIRLg4r5LwROwtithbAifGU9jOARhrGVEKwzOCQMaBBwzIYUGEbIrTYaQSHkFZIeRsh5FCTJvJ5k0yNROZb5VmR5BLyzyt5HkEPLPK3llyEc9hbF7klgyjYWxWwliInYWqUoEYYqJrP6G9AkbIaMhoLGyGkGYfMVRIpIyRTMVoSHzDSHmRrGTJs5PMnmRU/LfPxWYN5FiHn4y5dHllz8COe5Jcum5JchHPcpajquU7kZ1zWEsXsTsGYjqFsV1CWIidhFKWxEJ2/A3l/AMth8xkPIrTZFMwuYpILhsxSQuYrmK1mGzFc5LmL5yKzOVM5bnKuctRqEmTTCsybwRYh4Z5+Ojwy5IRy3JNZdOsp6yRHLrKWo6tZR1llI59RKx0aiOoJqNieltRPSMpaLT6LYMl6B0IjZDwsh5FU+VMkyrmDWHzFsxPK2YrWHxF8RPEXxFah8ZVzlmYtjLTQzk8yfOTzKqjcFuXTck1kHLrKWsurWUNxNRy7iO46dxHcZZc2olqL7iW0TUNRKr6R0MalSaU0TSMk85/aG/wA/YEGxSJ5UiikVylFcq1iuFso4WwN4th0YiGF8Kq+F8RDC+GmlsxWRPCuarUbco6i2qlsIhuIbjo2htGUNxz7dG0NpGUNoaX2hplNS0lVdJUY1PUTqmk6jLP5+BnQg2KQBQ8VyArWK5WwAN4vhfDQqrYWwA00vlWAK0KnoAEdo7aEZc+0NgIzqG0dAMpqOk9ADGpUmgEZDAEH/2Q==");
+            background-repeat: no-repeat;
+            background-size: contain;      
+           background-attachment: scroll; */
+        }
+
+        fieldset {
+            background-color: aliceblue;
+            width: 300px;
+            height: 500px;
+            border-radius: 20px;
+        }
+
+        form {
+            background-color: aliceblue;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <center>
+    <div id="container">
+        <h1 style="text-align: center;">Feedback Form</h1>
+
+        <center>
+            <fieldset >
+                <form style="color: black;">
+                    <label for="Feedback" style="background-color: aliceblue;">Feedback Type :</label>
+                    <br><input type="" style="background-color: aliceblue;">
+                    <select id="Feedback" style="background-color: aliceblue;">
+                        <option value="Compliment"></option>
+                        <option value="Comment"></option>
+                        <option value="none"></option>
+                    </select>
+                    <br><br>
+                    <label for="Message" style="background-color: aliceblue;"> Message </label><br>
+                    <textarea id="Message" style="background-color: aliceblue;"></textarea><br><br>
+                    <label style="background-color: aliceblue;">Website Rating: </label>
+                    <br><input type="radio" name="Website Rating" style="background-color: aliceblue;">
+                    <label style="background-color: aliceblue;">Excellent</label>
+                    <input type="radio" name="Website Rating" style="background-color: aliceblue;">
+                    <label style="background-color: aliceblue;">Good</label>
+                    <input type="radio" name="Website Rating" style="background-color: aliceblue;">
+                    <label style="background-color: aliceblue;">Average</label>
+                    <input type="radio" name="Website Rating" style="background-color: aliceblue;">
+                    <label style="background-color: aliceblue;">Poor</label>
+                    <br><br>
+                    <label style="background-color: aliceblue;">Age(0-100):</label>
+                    <br><input type="number" style="background-color: aliceblue;"><br><br>
+                    <label style="background-color: aliceblue;">Email<sup
+                            style="color: red;background-color: aliceblue;">*</sup> :</label>
+                    <br><input type="email" style="background-color: aliceblue;" required>
+                    <br><br>
+                    <label style="background-color: aliceblue;">Password(min. 8 characters) : </label>
+                    <br><input type="password" style="background-color: aliceblue;"><br><br>
+                    <label style="background-color: aliceblue;">Website URL(optional):</label>
+                    <br><input type="url" style="background-color: aliceblue;"><br>
+                    <br><input type="checkbox" style="background-color: aliceblue;">
+                    <label style="background-color: aliceblue;">I agree to the terms and conditions</label><br>
+                    <input type="submit" style="text-align: center; color: green;background-color: aliceblue;">
+
+            </fieldset>
+            </form>
+        </center>
+    </div>
+</center>
+</body>
+
+</html>
